@@ -1,0 +1,31 @@
+html, body {
+    overflow-x: hidden;
+}
+p.clip {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-height: 1.3em;
+    height: 3.9em;
+}
+.redact{
+    position: absolute;
+    right: -25px;
+}
+.redact a{
+    display: block;
+    cursor: pointer;
+}
+.redact .edit svg{
+    fill: green;
+    transform: scale(1.4);
+    margin-bottom: 10px;
+}
+.redact .trash svg{
+    fill: red;
+    transform: scale(1.5);
+}
+.save_changes{
+    display: none;
+}
